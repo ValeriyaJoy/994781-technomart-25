@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Валерия Лебедева](https://up.htmlacademy.ru/htmlcss/25/user/994781).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Рус](https://htmlacademy.ru/profile/vanillawulf).
 
 ---
 
