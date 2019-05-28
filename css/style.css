@@ -21,21 +21,24 @@ a {
 
   background-color: #293449;
 }
-.main-header img {
+.header-logo {
   padding-left: 55px;
   padding-right: 56px;
   padding-top: 13px;
   padding-bottom: 15px;
   background-color: #ee3643;
 }
-input[type="search"] {
+/*input[type="search"]*/
+.search {
   font: inherit;
   vertical-align: center;
   background-color: inherit;
   border: none;
 }
-input[type="search"]:hover,
-input[type="search"]:focus {
+/*input[type="search"]:hover,
+input[type="search"]:focus*/
+.search:hover
+.search:focus {
   background-color: #212a3a;
 }
 
@@ -45,11 +48,11 @@ input[type="search"]:focus {
 .checkout {
   background-color: #63a63e;
 }
-a.checkout:hover,
-a.checkout:focus {
+.checkout:hover,
+.checkout:focus {
   background-color: #5fbb2d;
 }
-a.checkout:active {
+.checkout:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
 }
@@ -71,16 +74,16 @@ a.checkout:active {
   line-height: 24px;
   color: #32425c;
 }
-.user-navigation a {
+.user-navigation-link {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
-.user-navigation a:hover,
-.user-navigation a:focus {
+.user-navigation-link:hover,
+.user-navigation-link:focus {
   color: #ee3643;
 }
-.user-navigation a:active {
+.user-navigation-link:active {
   color: rgba(0, 0, 0, 0.3)
 }
 .catalog-page .user-navigation {
@@ -89,11 +92,11 @@ a.checkout:active {
   color: #000000;
   background-color: #ffffff;
 }
-.catalog-page .user-navigation a:hover,
-.catalog-page .user-navigation a:focus {
+.catalog-page .user-navigation-link:hover,
+.catalog-page .user-navigation-link:focus {
   color: #000000;
 }
-.catalog-page .user-navigation a:active {
+.catalog-page .user-navigation-link:active {
   opacity: 0.3
 }
 .my-orders,
@@ -126,30 +129,30 @@ a.checkout:active {
 .social-button {
   list-style: none;
 }
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation-link:hover,
+.site-navigation-link:focus {
   background-color: #293449;
 }
-.site-navigation a:active {
+.site-navigation-link:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
-.promo span {
+.promo-material {
   font-size: 24px;
   line-height: 30px;
 }
-.promo a {
+.promo-material-link {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
 }
-.promo a:hover,
-.promo a:focus {
+.promo-material-link:hover,
+.promo-material-link:focus {
   background-color: rgba(0, 0, 0, 0.2);
 }
-.promo a:active {
+.promo-material-link:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .promo-materials {
@@ -179,36 +182,33 @@ a.checkout:active {
   width: 620px;
   height: 266px;
 }
-.promo-drills span,
-.promo-perforators span {
+.promo-item {
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
 }
-.promo-drills .promo-note,
-.promo-perforators .promo-note {
+.promo-note {
   font-size: 18px;
   line-height: 24px;
   text-transform: none;
 }
-a.main-button {
+.main-button {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   background-color: #ee3643;
 }
-a.main-button:hover,
-a.main-button:focus {
+.main-button:hover,
+.main-button:focus {
   background-color: #ca2c37;
 }
-a.main-button:active {
+.main-button:active {
   background-color: #ba2732;
 }
 .popular-header {
   background-color: #f9f5f0;
 }
-.popular-items h2,
-.popular-producers h2 {
+.popular {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -222,7 +222,7 @@ a.main-button:active {
   text-align: center;
   border: solid 1px #eaeaea;
 }
-.catalog-item h4 {
+.name-of-item {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
@@ -277,25 +277,23 @@ a.main-button:active {
   background-color: #f4f7f9;
   color: #000000;
 }
-.services h2,
-.about-company h2 {
+.short-about-company {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
-.services p,
-.about-company p {
+.сompany-details {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
-.services h3 {
+.service-name {
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
   text-transform: uppercase;
 }
-.service-navigation button {
+.service-point {
   width :240px;
   height: 61px;
   font-size: 21px;
@@ -305,11 +303,11 @@ a.main-button:active {
   text-align: left;
   background-color: #32425c;
 }
-.service-navigation button:hover,
-.service-navigation button:focus {
+.service-point:hover,
+.service-point:focus {
   background-color: #293449;
 }
-.service-navigation button:active {
+.service-point:active {
   color: #32425c;
   background-color: #ffffff;
 }
@@ -323,20 +321,21 @@ a.main-button:active {
 /*как изменить вид маркера?*/
 }
 
-.breadcrumbs a {
+.breadcrumbs-link,
+.breadcrumbs-current {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
   list-style: none;
 }
-.container h2 {
+.catalog-name {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   background-color: #f2f6f8;
 }
-.container h3 {
+.selection {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -344,16 +343,16 @@ a.main-button:active {
   background-color: #f7f3ec;
   text-transform: uppercase;
 }
-.filters-form fieldset {
+.filter-fields {
   border: none;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
 }
-.filters-form legend {
+.filter-field {
   line-height: 30px;
   font-weight: bold;
 }
-.filters-form ul {
+.filter-options {
   list-style: none;
   font-size: 15px;
   line-height: 20px;
@@ -374,16 +373,16 @@ a.main-button:active {
   text-transform: uppercase;
 
 }
-.sorting a {
+.selection-link {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
 }
-.sorting a:hover,
-.sorting a:focus {
+.selection-link:hover,
+.selection-link:focus {
   color: #000000;
   border-bottom: 1px solid #ee3643;
 }
-.sorting a:active {
+.selection-link:active {
   color: #ee3643;
  border-bottom: none;
 }
@@ -393,38 +392,37 @@ a.main-button:active {
 .pagination-list {
   list-style: none;
 }
-.pagination-list a {
+.pagination-link {
   border: 1px solid #e5e5e5;
   color: #000000;
 }
-.pagination-list a:hover,
-.pagination-list a:focus {
+.pagination-link:hover,
+.pagination-link:focus {
   border: 1px solid #bdc6ca;
 }
-.pagination-list a:active {
+.pagination-link:active {
   border: 1px solid #ee3643;
 }
-/*не переопределяетс цвет*/
-.pagination-item-current a {
+.pagination-link-current {
   color: #ffffff;
   background-color: #ee3643;
 }
 
-.about-perforator {
+.about-perforators {
   color: #000000;
   background-color: #f4f7f9;
 }
-.about-perforator h3 {
+.about-perforator {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
-.about-perforator p {
+.perforator-details {
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
 }
-.main-footer img {
+.footer-logo {
   padding-left: 41px;
   padding-right: 41px;
   padding-top: 20px;
@@ -436,22 +434,22 @@ a.main-button:active {
   line-height: 24px;
   color: #f3f7f9;
 }
-.footer-navigation a {
+.footer-navigation-link {
   font-size: 18px;
   line-height: 24px;
 }
-.list-items a{
+.list-items .footer-navigation-link{
   color: #ffd180;
 }
-.footer-navigation a:hover,
-.footer-navigation a:focus,
+.footer-navigation-link:hover,
+.footer-navigation-link:focus,
 .footer-feedback-mail:hover,
 .footer-feedback-mail:focus,
 .footer-developer-site:hover,
 .footer-developer-site:focus {
   text-decoration: underline;
 }
-.footer-navigation a:active {
+.footer-navigation-link:active {
   opacity: 0.5;
 }
 .bottom-footer {
