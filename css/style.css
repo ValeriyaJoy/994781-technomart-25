@@ -10,6 +10,8 @@ body {
   background-color: #ffffff;
 }
 .main-header {
+  margin-bottom: 60px;
+
   background-color: #f4f7f9;
 }
 a {
@@ -17,36 +19,58 @@ a {
   color: #ffffff;
 }
 .menu-top {
+  display: flex;
+  justify-content: flex-start;
   line-height: 18px;
-
-  background-color: #293449;
+}
+.menu-top-wrapper{
+ width: 100%;
+ margin-bottom: 45px;
+ background-color: #293449;
+}
+.conteiner {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 .header-logo {
+  width: 110px;
   padding-left: 55px;
-  padding-right: 56px;
+  padding-right: 55px;
   padding-top: 13px;
   padding-bottom: 15px;
+  margin-right: 15px;
   background-color: #ee3643;
 }
-/*input[type="search"]*/
+/*при нажатии на поиск появляется синяя рамкаю почему? как убрать?*/
 .search {
   font: inherit;
+  padding: 14px;
+  padding-left: 35px;
   vertical-align: center;
   background-color: inherit;
   border: none;
 }
-/*input[type="search"]:hover,
-input[type="search"]:focus*/
+
 .search:hover
 .search:focus {
   background-color: #212a3a;
 }
-
+.header-button {
+  width: 150px;
+  text-align: center;
+  padding: 14px;
+}
 .header-button:active {
-  color: rgba(255, 255, 255, 0.6)
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
 }
 .checkout {
+  width: 150px;
+  padding: 14px;
+  text-align: center;
   background-color: #63a63e;
+
 }
 .checkout:hover,
 .checkout:focus {
@@ -56,14 +80,31 @@ input[type="search"]:focus*/
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
 }
+.menu-middle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.menu-middle-wrapper {
+  width: 100%;
+  margin-bottom: 47px;
+}
 .about-store {
+  width: 195px;
+  margin-left: 53px;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
   color: #ee3643;
 }
-
+.header-contacts {
+    margin-left: 70px;
+}
 .header-contacts-number {
+  padding-left: 70px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 8px;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -72,12 +113,22 @@ input[type="search"]:focus*/
 .header-contacts-address {
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
   color: #32425c;
 }
+
+.user-navigation {
+  display: flex;
+}
 .user-navigation-link {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+  background-color: #ffffff;
 }
 .user-navigation-link:hover,
 .user-navigation-link:focus {
@@ -86,6 +137,7 @@ input[type="search"]:focus*/
 .user-navigation-link:active {
   color: rgba(0, 0, 0, 0.3)
 }
+
 .catalog-page .user-navigation {
   font-size: 21px;
   line-height: 21px;
@@ -119,14 +171,27 @@ input[type="search"]:focus*/
   display: none;
 }
 .main-navigation {
+
   background-color: #32425c;
+}
+.site-navigation{
+  display: flex;
+  justify-content: space-around;
+  width: 940px;
+}
+.site-navigation-link {
+  width: 127px;
+  padding: 31px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .site-navigation,
 .user-navigation,
 .service-navigation,
 .footer-navigation,
 .footer-social,
-.social-button {
+.social-button,
+.header-contacts {
   list-style: none;
 }
 .site-navigation-link:hover,
@@ -481,3 +546,9 @@ input[type="search"]:focus*/
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*для сетки
+body {
+  background-image: url(../img/prewiew/technomart-index.jpeg);
+  background-size: 1200px 3151px;
+}*/
