@@ -9,16 +9,21 @@ body {
   color: #ffffff;
   background-color: #ffffff;
 }
-.main-header {
-  margin-bottom: 60px;
 
-  background-color: #f4f7f9;
-}
 a {
   text-decoration: none;
   color: #ffffff;
 }
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-header {
+  padding-bottom: 60px;
 
+  background-color: #f4f7f9;
+}
 .menu-top-wrapper{
  width: 100%;
  margin-bottom: 45px;
@@ -29,30 +34,30 @@ a {
   justify-content: flex-start;
   line-height: 18px;
 }
-.container {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
 .header-logo {
   width: 110px;
-  padding-left: 55px;
-  padding-right: 55px;
-  padding-top: 13px;
-  padding-bottom: 15px;
-  margin-right: 15px;
+  padding: 13px 55px 15px 55px;
   background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
-/*при нажатии на поиск появляется синяя рамкаю почему? как убрать?*/
+.catalog-page .header-logo:focus,
+.catalog-page .header-logo:hover {
+  background-color: #ca2c37;
+}
+.catalog-page .header-logo:active {
+  background-color: #ba2732;
+}
+
 .search {
+  width: 270px;
   font: inherit;
-  padding: 14px;
-  padding-left: 35px;
-  vertical-align: center;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  padding-left: 49px;
+  vertical-align: middle;
   background-color: inherit;
   border: none;
 }
-
 .search:hover
 .search:focus {
   background-color: #212a3a;
@@ -81,17 +86,18 @@ a {
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
 }
+.menu-middle-wrapper {
+  width: 100%;
+}
 .menu-middle-wrapper .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-.menu-middle-wrapper {
-  width: 100%;
-  margin-bottom: 47px;
+
 }
 .about-store {
   width: 195px;
+  margin: 0px;
   margin-left: 50px;
   font-size: 16px;
   font-style: italic;
@@ -99,7 +105,10 @@ a {
   color: #ee3643;
 }
 .header-contacts {
-    margin-left: 70px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 70px;
+  list-style: none;
 }
 .header-contacts-number {
   padding-left: 70px;
@@ -117,37 +126,13 @@ a {
   text-align: center;
   color: #32425c;
 }
-
 .user-navigation {
   display: flex;
-}
-.user-navigation-account-in {
-  /*width: 300px;*/
+  margin: 0px;
+  padding: 0px;
+  margin-left: 69px;
   list-style: none;
-  display: flex;
-  padding-top: 14px;
-  padding-bottom: 11px;
-  padding-left: 45px;
-  padding-right: 69px;
-
-  font-size: 21px;
-  line-height: 21px;
-  background-color: #ffffff;
 }
-.account-in {
-  width: 300px;
-  margin-bottom: 40px;
-  margin-left: 50px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.account-details {
-  margin-left: 20px;
-}
-.user-navigation-profile {
-  color: #000000;
-}
-
 .user-navigation-link {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -165,26 +150,47 @@ a {
 .user-navigation-link:active {
   color: rgba(0, 0, 0, 0.3)
 }
+.user-navigation-in {
+  margin-right: 10px;
+}
 
-.catalog-page .user-navigation {
+.user-navigation-account-in {
+  display: flex;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 14px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  list-style: none;
   font-size: 21px;
   line-height: 21px;
-  color: #000000;
   background-color: #ffffff;
 }
-.catalog-page .user-navigation-link:hover,
-.catalog-page .user-navigation-link:focus {
+.user-navigation-profile {
   color: #000000;
+  padding-left: 47px;
+  padding-right: 39px;
 }
-.catalog-page .user-navigation-link:active {
-  opacity: 0.3
+.user-navigation-logout {
+  padding-top: 10px;
+}
+.account-details {
+
 }
 .my-orders,
 .account {
+  margin-left: 51px;
+  padding-left: 17px;
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
+}
+.account {
+  margin: 0px;
+  padding-left: 32px;
 }
 .my-orders:hover,
 .my-orders:focus,
@@ -199,60 +205,42 @@ a {
   display: none;
 }
 .main-navigation {
-
+  margin-top: 44px;
   background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 rgb(41, 52, 73);
 
 }
 .site-navigation{
   display: flex;
+  justify-content: space-between;
   width: 940px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
-.site-navigation-link {
-  width: 127px;
-  padding: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.site-navigation-link,
+.site-navigation-current {
+  display: block;
+  padding: 15px 30px 15px 30px;
 }
 
-.site-navigation,
-.user-navigation,
-.service-navigation,
-.footer-navigation,
-.footer-social,
-.social-button,
-.header-contacts {
-  list-style: none;
-}
-.site-navigation-item:hover,
-.site-navigation-item:focus {
+.site-navigation-link:hover,
+.site-navigation-link:focus {
   background-color: #293449;
-  padding-top: 14px;
-  padding-bottom: 14px;
 
 }
-.site-navigation-item:active {
+.site-navigation-link:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
-  padding: 31px;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
+.main-part {
+  margin-bottom: 85px;
 
-.breadcrumbs .container {
-  display: flex;
 }
-.breadcrumbs {
-margin: 0;
-padding: 0;
-
-list-style: none;
-display: flex;
+.main-part .container {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
-
 
 .promo-material {
   font-size: 24px;
@@ -310,9 +298,10 @@ display: flex;
   text-transform: none;
 }
 .main-button {
+  display: inline-block;
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
+
   background-color: #ee3643;
 }
 
@@ -332,13 +321,51 @@ display: flex;
   color: #32425c;
   text-transform: uppercase;
 }
+.catalog-wrapper .container {
+  display: flex;
+}
+.sorting {
+  width: 700px;
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+}
+
+.selection-options {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+.catalog {
+  width: 700px;
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
 .catalog-item {
-  width: 220px;
+  width: 218px;
   height: 318px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   text-align: center;
   border: solid 1px #eaeaea;
+}
+.catalog-item:nth-child(3n) {
+  margin-right: 0px;
 }
 .name-of-item {
   font-size: 18px;
@@ -395,35 +422,6 @@ display: flex;
   background-color: #f4f7f9;
   color: #000000;
 }
-.about-company {
-  /*display: flex;*/
-  padding-left: 130px;
-  padding-right: 130px;
-  padding-top: 80px;
-  padding-bottom: 86px;
-}
-.about-company .container {
- display: flex;
-}
-.company-description {
-  width: 520px;
-}
-.main-contacts {
-  width: 300px;
-}
-.map-popup {
-  display: none;
-}
-.short-about-company {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-.сompany-details {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-}
 .service-name {
   font-size: 36px;
   line-height: 36px;
@@ -451,34 +449,104 @@ display: flex;
 .about-company {
   color: #000000;
 }
+
+.about-company .container {
+ display: flex;
+}
+.company-description {
+  width: 520px;
+  margin-right: 120px;
+}
+.short-about-company {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.сompany-details {
+  width: 520px;
+  /*не влезает текст как на макете, почему?*/
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+.сompany-details-delivery {
+  width: 390px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
 .partners {
+  margin-bottom: 0px;
+  padding: 0px;
+
   font-size: 18px;
   line-height: 20px;
   list-style: none;
 /*как изменить вид маркера?*/
 }
+.company-description .main-button {
+  padding: 10px 40px 10px 41px;
+  margin-top: 37px;
+}
 
+.main-contacts .сompany-details {
+  width: 180px;
+  margin-bottom: 30px;
+}
+.main-contacts .main-button {
+  width: 300px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+.map-popup {
+  display: none;
+}
+.breadcrumbs {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+
+}
 .breadcrumbs-link,
 .breadcrumbs-current {
+  margin-right: 40px;
+  list-style: none;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
-  list-style: none;
 }
 .catalog-name {
+  padding: 0px;
+  margin: 0px;
+  padding-top: 32px;
+  padding-left: 30px;
+  padding-bottom: 34px;
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
   color: #32425c;
   background-color: #f2f6f8;
 }
 .selection {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   background-color: #f7f3ec;
   text-transform: uppercase;
+}
+
+.filters {
+  width: 200px;
+  margin-right: 20px;
 }
 .filter-fields {
   border: none;
@@ -503,13 +571,7 @@ display: flex;
   font-size: 13px;
   line-height: 18px;
 }
-.sorting {
-  font-size: 13px;
-  line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
-  text-transform: uppercase;
 
-}
 .selection-link {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
@@ -523,11 +585,27 @@ display: flex;
   color: #ee3643;
  border-bottom: none;
 }
-.main-footer {
-  background-color: #32425c;
-}
 .pagination-list {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
   list-style: none;
+}
+.pagination-item {
+  margin-right: 10px;
+}
+.pagination-link-current,
+.pagination-link,
+.pagination-link-next {
+  display: block;
+  width: 38px;
+  padding-top: 11px;
+  padding-bottom: 14px;
+  text-align: center;
+}
+.pagination-link-next {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .pagination-link {
   border: 1px solid #e5e5e5;
@@ -544,29 +622,30 @@ display: flex;
   color: #ffffff;
   background-color: #ee3643;
 }
-
 .about-perforators {
+  padding-top: 65px;
+  padding-bottom: 70px;
   color: #000000;
   background-color: #f4f7f9;
+
 }
 .about-perforator {
+
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 .perforator-details {
+  margin: 0px;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
 }
+.main-footer {
+  background-color: #32425c;
+}
 .main-footer .container {
   display: flex;
-
-  margin-bottom: 50px;
-}
-.footer-colums {
-  display: flex;
-  flex-direction: column;
 }
 .footer-logo {
   padding-left: 41px;
@@ -575,14 +654,25 @@ display: flex;
   padding-bottom: 25px;
   margin-bottom: 30px;
   background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 .footer-contacts {
   width: 322px;
+  margin: 0px;
+  padding: 0px;
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
 }
-.footer-navigation-link {
+.footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 40px;
+  list-style: none;
   font-size: 18px;
   line-height: 24px;
 }
@@ -600,23 +690,6 @@ display: flex;
 .footer-navigation-link:active {
   opacity: 0.5;
 }
-.bottom-footer {
-  font-size: 16px;
-  line-height: 18px;
-  background-color: #293449;
-}
-.bottom-footer .container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-.footer-navigation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  margin-top: 40px;
-}
 .footer-navigation-item,
 .list-items {
   padding-right: 60px;
@@ -628,7 +701,17 @@ display: flex;
 .footer-navigation:nth-child(5) {
   padding: 0px;
 }
-
+.bottom-footer {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #293449;
+}
+.bottom-footer .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-top: 40px;
+}
 .footer-feedback-mail,
 .footer-developer-site {
   color: #ffd180;
@@ -639,24 +722,25 @@ display: flex;
 }
 .footer-copyright {
   width: 230px;
+  margin: 0px;
+  padding: 0px;
   margin-right: 160px;
 }
 .social-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 .footer-feedback {
   width: 135px;
   margin-right: 50px;
+  margin-left: 115px
 }
 .footer-developer {
   width: 96px;
-  /*margin-right: 15px;*/
-}
-.write-us-item {
-  display: none;
-}
-.basket {
-  display: none;
+  padding-right: 15px;
+
 }
 .visually-hidden {
   position: absolute;
@@ -668,9 +752,16 @@ display: flex;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/*для сетки
-body {
-  background-image: url(../img/prewiew/technomart-index.jpeg);
-  background-size: 1200px 3151px;
+/*delete
+.services,
+.popular-producers,
+.popular-items,
+.promo {
+  display: none;
 }*/
+.write-us-item {
+  display: none;
+}
+.basket {
+  display: none;
+}
