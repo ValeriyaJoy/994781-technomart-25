@@ -89,51 +89,65 @@
           <div class="catalog-wrapper">
             <div class="container">
               <section class="filters">
-              <h3 class="selection">Фильтр:</h3>
-              <form class="filters-form" action="#" method="get">
-                <fieldset class="filter-fields">
-                  <legend class="filter-field">Цена:</legend>
-                </fieldset>
-                <fieldset class="filter-fields">
-                  <legend class="filter-field">Производители:</legend>
-                  <ul class="filter-options">
-                    <li class="filter-option">
-                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
-                      <label for="filter-bosch">Bosch</label>
-                    </li>
-                    <li class="filter-option">
-                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
-                      <label for="filter-interskol">Интерскол</label>
-                    </li>
-                    <li class="filter-option">
-                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
-                      <label for="filter-makita">Makita</label>
-                    </li>
-                    <li class="filter-option">
-                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
-                      <label for="filter-dewalt">Dewalt</label>
-                    </li>
-                    <li class="filter-option">
-                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="filter-hitachi" id="filter-hitachi">
-                      <label for="filter-hitachi">Hitachi</label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="filter-fields">
-                <legend class="filter-field">Питание:</legend>
-                <ul class="filter-options">
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input-radio" type="radio" name="supply" value="accumulator" id="filter-accumulator" checked>
-                    <label for="filter-accumulator">Аккумуляторные</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input-radio" type="radio" name="supply" value="networked" id="filter-networked">
-                    <label for="filter-networked">Сетевые</label>
-                  </li>
-                </ul>
-              </fieldset>
-              <button type="submit" class="filter-button">Показать</button>
-            </form>
+                <h3 class="selection">Фильтр:</h3>
+                <form class="filters-form" action="#" method="get">
+                  <fieldset class="filter-fields">
+                    <legend class="filter-field">Цена:</legend>
+                    <div class="filter-range">
+                      <div class="range-controls">
+                        <div class="scale">
+                          <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                      </div>
+                      <div class="price-controls">
+                          <input type="text" name="min-price" value="0">
+                          <span class="price-range">&lowbar;</span>
+                          <input type="text" name="max-price" value="30000">
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset class="filter-fields">
+                    <legend class="filter-field">Производители:</legend>
+                    <ul class="filter-options">
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                        <label for="filter-bosch">Bosch</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                        <label for="filter-interskol">Интерскол</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                        <label for="filter-makita">Makita</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                        <label for="filter-dewalt">Dewalt</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="filter-hitachi" id="filter-hitachi">
+                        <label for="filter-hitachi">Hitachi</label>
+                      </li>
+                    </ul>
+                    </fieldset>
+                    <fieldset class="filter-fields">
+                    <legend class="filter-field">Питание:</legend>
+                    <ul class="filter-options">
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-radio" type="radio" name="supply" value="accumulator" id="filter-accumulator" checked>
+                        <label for="filter-accumulator">Аккумуляторные</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-radio" type="radio" name="supply" value="networked" id="filter-networked">
+                        <label for="filter-networked">Сетевые</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <button type="submit" class="filter-button">Показать</button>
+                </form>
               </section>
               <div class="catalog-page-wrapper">
                 <section class="sorting">
@@ -152,7 +166,7 @@
                     </li>
                     <li class="selection-option">
                       <a class="selection-link-sorting" href="#">
-                        <span class="visually-hidden">По убыванию<</span>
+                        <span class="visually-hidden">По убыванию</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                             <path fill="#231F20" d="M5.5 10L0 0h11"/>
                         </svg>
@@ -258,22 +272,22 @@
                   </li>
                 </ul>
                 <ul class="pagination-list">
-                  <li class="pagination-item"><a class="pagination-link-current">1</a></li>
-                  <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
-                  <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
-                  <li class="pagination-item"><a class="pagination-link-next" href="#">Следующая</a></li>
-                </ul>
-              </div>
-            </section>
+                    <li class="pagination-item"><a class="pagination-link-current">1</a></li>
+                    <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+                    <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+                    <li class="pagination-item"><a class="pagination-link-next" href="#">Следующая</a></li>
+                  </ul>
+                </section>
               </div>
             </div>
           </div>
+
       <div class="about-perforators">
         <div class="container">
           <h3 class="about-perforator">Пара слов о перфораторах</h3>
-          <p class="perforator-details">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне</p>
-          <p class="perforator-details">Существует электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
-        ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+          <p class="perforator-details">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
+          <p class="perforator-details">Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор
+            &laquo;трехрежимников&raquo;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </div>
       </div>
     </main>
@@ -335,11 +349,11 @@
         </div>
       </div>
     </footer>
-    <section class="basket">
-      <h2>Товар добавлен в корзину!</h2>
-      <a href="#" class="button">Оформить заказ</a>
+    <section class="modal basket">
+      <h2 class="add-to-basket">Товар добавлен в корзину!</h2>
+      <a class="buy-now" href="#" class="button">Оформить заказ</a>
       <button class="basket-close" type="button">Продолжить покупки</button>
-      <button class="basket-close" type="button">Закрыть</button>
+      <button class="button-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
