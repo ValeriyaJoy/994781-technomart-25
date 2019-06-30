@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body class="catalog-page">
     <header class="main-header">
@@ -17,10 +17,8 @@
             <img class="header-logo" src="img/logo-technomart.svg" width="110" height="19" alt="Логотип Техномарт">
           </a>
           <form class="search-form" action="#" method="get">
-            <button class="button-search" type="submit">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
-            </button>
             <input class="search" type="search" name="site-search" placeholder="Поиск:">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
           </form>
           <a class="header-button bookmark" href="#">Закладки: 0</a>
           <a class="header-button basket-top" href="#">Корзина: 10</a>
@@ -51,6 +49,15 @@
                 </a>
               </li>
             </ul>
+          <!--  <a class="user-navigation-profile" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                  <path fill="#32425C" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
+              </svg>
+            Равшан Джамшутович
+            </a>
+            <a class="user-navigation-logout" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
+            </a>-->
             <div class="account-details">
               <a class="my-orders" href="#">Мои заказы</a>
               <a class="account" href="#">Личный кабинет</a>
@@ -261,7 +268,7 @@
                   <li class="catalog-item">
                     <img class="catalog-items" src="img/perforator_2000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 2000">
                     <div class="shopping-menu">
-                      <a class="button-buy" href="#">Купить</a>
+                      <button class="button-buy">Купить</button>
                       <a class="button-bookmark" href="#">В закладки</a>
                     </div>
                     <h4 class="name-of-item">Перфоратор BOSCH BFG 2000</h4>
