@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style-min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
      <header class="main-header">
@@ -27,7 +27,7 @@
             <h1 class="visually-hidden">Интернет-магазин</h1>
               <p class="about-store">Интернет-магазин строительных материалов <br>и инструментов для ремонта</p>
               <ul class="header-contacts">
-                <li class="header-contacts-number">+7 (812) 555-05-55</li>
+                <li class="header-contacts-number" x-ms-format-detection="none">+7 (812) 555-05-55</li>
                 <li class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
               </ul>
               <ul class="user-navigation">
@@ -101,14 +101,17 @@
                  </svg>
                </button>
            </div>
-           <div class="block promo-discount">
-             <span class="promo-material">Скидка 50%</span>
-             <a class="promo-material-link" href="#">на 350 товаров</a>
+           <div class="second-column-wrapper">
+             <div class="block promo-discount">
+               <span class="promo-material">Скидка 50%</span>
+               <a class="promo-material-link" href="#">на 350 товаров</a>
+             </div>
+             <div class="block promo-delivery">
+               <span class="promo-material">Доставка</span>
+               <a class="promo-material-link" href="#">Бесплатно</a>
+             </div>
            </div>
-           <div class="block promo-delivery">
-             <span class="promo-material">Доставка</span>
-             <a class="promo-material-link" href="#">Бесплатно</a>
-           </div>
+
          </div>
        </section>
        <section class="popular-items">
@@ -268,18 +271,19 @@
              <a class="map-link" href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург,+191186/@59.9387165,30.3208587,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474?hl=ru">
                <img class="little-map" src="img/map.png" width="300" height="158" alt="Адрес компании: Большая Конюшенная ул., 19">
              </a>
-             <a class="main-button open-map" href="#">Заблудились? Напишите нам!</a>
+             <a class="main-button open-message" href="#">Заблудились? Напишите нам!</a>
             </div>
           </div>
       </section>
       <section class="modal map-popup">
         <h2 class="visually-hidden">Адрес компании</h2>
-        <img class="big-map" src="img/map-popup.png" width="940" height="447" alt="Адрес компании: Большая Конюшенная ул., 19">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562267234108!5m2!1sru!2sru" width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
         <button class="button-close" type="button">Закрыть</button>
       </section>
       <section class="modal write-us-items">
           <h2 class="visually-hidden">Напишите нам</h2>
           <form class="write-us-form" action="#" method="post">
+            <div class="write-us-form-wrapper">
               <p class="write-us-item">
                 <label for="write-us-form-sender">Ваше имя:</label>
                 <input id="write-us-form-sender" class="sender-name" type="text" name="sender-name" placeholder="Имя Фамилия">
@@ -293,6 +297,7 @@
                 <textarea id="write-us-form-text" class="mail-text" name="mail-text" placeholder="В свободной форме"></textarea>
               </p>
               <button class="button-close" type="button">Закрыть</button>
+            </div>
             <div class="bottom-write-us">
               <button class="button-send" type="submit">Отправить</button>
             </div>
@@ -303,7 +308,7 @@
        <div class="container">
          <div class="footer-colums">
            <img class="footer-logo" src="img/logo-technomart.svg" width="138" height="23" alt="Логотип Техномарт">
-           <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+           <p class="footer-contacts" x-ms-format-detection="none">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
          </div>
          <div class="footer-menu">
            <ul class="footer-navigation-main">
@@ -355,5 +360,6 @@
          </div>
       </div>
      </footer>
+     <script src="js/script.js"></script>
    </body>
  </html>

@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style-min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="catalog-page">
     <header class="main-header">
@@ -30,7 +30,7 @@
           <h1 class="visually-hidden">Интернет-магазин</h1>
           <p class="about-store">Интернет-магазин строительных материалов и инструментов для ремонта</p>
           <ul class="header-contacts">
-            <li class="header-contacts-number">+7 (812) 555-05-55</li>
+            <li class="header-contacts-number" x-ms-format-detection="none">+7 (812) 555-05-55</li>
             <li class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
           </ul>
           <div class="account-in">
@@ -49,15 +49,6 @@
                 </a>
               </li>
             </ul>
-          <!--  <a class="user-navigation-profile" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
-                  <path fill="#32425C" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
-              </svg>
-            Равшан Джамшутович
-            </a>
-            <a class="user-navigation-logout" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
-            </a>-->
             <div class="account-details">
               <a class="my-orders" href="#">Мои заказы</a>
               <a class="account" href="#">Личный кабинет</a>
@@ -82,7 +73,7 @@
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
-                  <img class="icon-home" src="img/icon-home.svg" alt="Главная">
+                  <img class="icon-home" src="img/icon-home.svg" width="14" height="12" alt="Главная">
                 </a>
               </li>
               <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="catalog.html">Каталог</a></li>
@@ -160,12 +151,12 @@
                 <section class="sorting">
                   <h3 class="selection">Сортировка:</h3>
                   <ul class="selection-options">
-                    <li class="selection-option"><a class="selection-link" href="#">По цене</a></li>
+                    <li class="selection-option"><a class="selection-link selected" href="#">По цене</a></li>
                     <li class="selection-option"><a class="selection-link" href="#">По типу</a></li>
                     <li class="selection-option"><a class="selection-link" href="#">По функционалу</a></li>
                   </ul>
                   <div class="sorting-pointer">
-                    <a class="selection-link-sorting" href="#">
+                    <a class="selection-link-sorting selected" href="#">
                       <span class="visually-hidden">По возрастанию</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                           <path fill="#231F20" d="M5.5 0L0 10h11z"/>
@@ -311,7 +302,7 @@
               <a class="footer-logo-link" href="index.html">
                 <img class="footer-logo" src="img/logo-technomart.svg" width="140" height="23" alt="Логотип Техномарт">
               </a>
-              <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+              <p class="footer-contacts" x-ms-format-detection="none">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
             </div>
             <div class="footer-menu">
               <ul class="footer-navigation-main">
@@ -363,5 +354,22 @@
             </div>
           </div>
         </footer>
+        <script>
+          var shopping = ["display: none;", "display: block;"];
+          var shoppingMenu = document.querySelector(".shopping-menu");
+          var buttonBuy = document.querySelectorAll(".button-buy");
+          var basketPopup = document.querySelector(".basket");
+          for (var i = "display: block;"; i = shopping; i++ ) {
+            buttonBuy.addEventListener ("click", function(evt) {
+              evt.preventDefault();
+              console.log("added")
+            });
+          }
+          buttonBuy.addEventListener ("click", function(evt) {
+            evt.preventDefault();
+            basketPopup.classList.add("modal-show");
+            console.log("added")
+          });
+        </script>
       </body>
     </html>
