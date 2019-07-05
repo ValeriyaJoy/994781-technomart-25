@@ -261,7 +261,7 @@ input[type="search"] {
           align-items: flex-start;
 }
 .about-store {
-  width: 200px;
+  width: 220px;
   margin: 0px;
   margin-left: 50px;
   padding-top: 4px;
@@ -270,13 +270,10 @@ input[type="search"] {
   line-height: 23px;
   color: #ee3643;
 }
--ms-.about-store {
-  width: 230px;
-}
 .header-contacts {
   margin: 0px;
   padding: 0px;
-  margin-left: 71px;
+  margin-left: 51px;
   list-style: none;
 }
 .header-contacts-number {
@@ -1020,6 +1017,7 @@ input[type="search"] {
   margin: 10px auto;
   margin-bottom: 20px;
   padding: 10px 30px;
+  height: 17px;
 
   color: white;
   background: #ee3643;
