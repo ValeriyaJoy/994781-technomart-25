@@ -39,12 +39,11 @@ link.addEventListener ("click", function(evt) {
     } else {
       email.value.focus();
     }
-
 });
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
-})
+});
 mapLink.addEventListener ("click", function(evt) {
   evt.preventDefault();
   mapPopup.classList.add("modal-show");
@@ -52,7 +51,7 @@ mapLink.addEventListener ("click", function(evt) {
 mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.remove("modal-show");
-})
+});
 writeUsForm.addEventListener("submit", function(evt) {
  if (!sanderName.value || !email.value || !mailText.value) {
    evt.preventDefault();
@@ -65,7 +64,7 @@ writeUsForm.addEventListener("submit", function(evt) {
    localStorage.setItem("email", email.value);
    }
  }
-})
+});
 window.addEventListener("keydown", function (evt) {
  if (evt.keyCode === 27) {
    evt.preventDefault();
@@ -75,3 +74,13 @@ window.addEventListener("keydown", function (evt) {
    }
  }
 });
+if (window.matchMedia('(min-width: 1024px)').matches) {
+    var e = document.getElementsByClassName("header-contacts-number");
+    for (i = 0; i < e.length; i++)
+        e[i].setAttribute("x-ms-format-detection", "none");
+}
+if (window.matchMedia('(min-width: 1024px)').matches) {
+    var e = document.getElementsByClassName("footer-contacts");
+    for (i = 0; i < e.length; i++)
+        e[i].setAttribute("x-ms-format-detection", "none");
+}
