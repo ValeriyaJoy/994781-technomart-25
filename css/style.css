@@ -67,7 +67,7 @@ a {
   background-color: #f4f7f9;
 }
 .catalog-page .main-header {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 .menu-top-wrapper {
  width: 100%;
@@ -787,7 +787,8 @@ input[type="search"] {
   width: 253px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px 0;
+  padding-top: 12px;
+  padding-bottom: 10px;
   margin-top: 25px;
   margin-right: 26px;
   margin-bottom: 26px;
@@ -885,11 +886,11 @@ input[type="search"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 380px;
+  width: 375px;
   margin: 0px;
   padding: 0px;
   padding-top: 10px;
-  margin-right: 40px;
+  margin-right: 45px;
   list-style: none;
 }
 .selection-option {
@@ -910,9 +911,10 @@ input[type="search"] {
 }
 .sorting-pointer {
   padding: 10px 0px;
+/*  margin-right: 7px;*/
 }
 .selection-link-sorting:first-of-type {
-  padding-right: 21px;
+  padding-right: 19px;
 }
 .selection-link-sorting:hover path {
   opacity: 0.3;
@@ -1013,8 +1015,9 @@ input[type="search"] {
 .new-price {
   display: block;
   position: relative;
-  width: 80px;
-  margin: 10px auto;
+  width: 78px;
+  margin-top: 12px;
+  margin-left: 43px;
   margin-bottom: 20px;
   padding: 10px 30px;
   height: 17px;
@@ -1025,6 +1028,9 @@ input[type="search"] {
 
   line-height: 18px;
   text-transform: uppercase;
+}
+.catalog-page .new-price {
+  margin-top: 10px;
 }
 .new-price::after {
   content: "";
@@ -1240,7 +1246,7 @@ input[type="search"] {
  display: -ms-flexbox;
  display: flex;
  margin-top: 77px;
- margin-bottom: 86px;
+ margin-bottom: 87px;
 }
 .company-description {
   width: 520px;
@@ -1286,7 +1292,7 @@ input[type="search"] {
 .partner-name {
   position: relative;
   margin-left: 35px;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 .partner-name:last-of-type {
   margin-bottom: 0;
@@ -1304,8 +1310,8 @@ input[type="search"] {
   width: 220px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px 40px 10px;
-  margin-top: 36px;
+  padding: 11px 40px 9px;
+  margin-top: 38px;
 }
 .little-map {
   background-color: grey;
@@ -1314,14 +1320,14 @@ input[type="search"] {
   width: 180px;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 .main-contacts .main-button {
   width: 300px;
   text-align: center;
   vertical-align: middle;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 9px;
   margin-top: 38px;
 }
 .breadcrumbs {
@@ -1358,7 +1364,7 @@ input[type="search"] {
 }
 .breadcrumbs-link,
 .breadcrumbs-current {
-  margin-right: 40px;
+  margin-right: 41px;
   list-style: none;
   font-size: 13px;
   line-height: 18px;
@@ -1643,7 +1649,7 @@ input[type="search"] {
 }
 .about-perforators {
   padding-top: 65px;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
   color: #000000;
   background-color: #f4f7f9;
 }
@@ -1705,7 +1711,7 @@ input[type="search"] {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 640px;
+  width: 555px;
   margin: 0px;
   padding: 0px;
   margin-top: 38px;
@@ -1718,6 +1724,7 @@ input[type="search"] {
   margin-top: 0px;
   margin-bottom: 72px;
   padding-left: 23px;
+  box-sizing: border-box;
 }
 
 .list-items .footer-navigation-link{
