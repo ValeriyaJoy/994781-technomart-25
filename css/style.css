@@ -111,7 +111,8 @@ a {
   -ms-background-color: #293449;
       background-color: #293449;
 }
-.search-form:hover {
+.search:hover,
+.search:focus {
   background-color: #212a3a;
 }
 .search {
@@ -263,7 +264,7 @@ input[type="search"] {
 .about-store {
   width: 220px;
   margin: 0px;
-  margin-left: 50px;
+  margin-left: 51px;
   padding-top: 4px;
   font-size: 16px;
   font-style: italic;
@@ -281,7 +282,7 @@ input[type="search"] {
   width: 270px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 72px;
+  padding-left: 71px;
 
   padding-top: 10px;
   padding-bottom: 8px;
@@ -295,7 +296,7 @@ input[type="search"] {
 
   position: absolute;
   top: 10px;
-  left: 14px;
+  left: 13px;
 
   width: 19px;
   height: 19px;
@@ -348,8 +349,8 @@ input[type="search"] {
   color: rgba(0, 0, 0, 0.3)
 }
 .user-navigation-in svg {
-  padding-left: 17px;
-  padding-right: 7px;
+  padding-left: 14px;
+  padding-right: 8px;
 }
 .user-navigation-in:hover path,
 .user-navigation-in:focus path {
@@ -374,10 +375,10 @@ input[type="search"] {
   width: 300px;
   margin: 0;
   padding: 0;
-  padding-top: 13px;
+  padding-top: 11px;
   padding-bottom: 8px;
   margin-left: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   list-style: none;
   font-size: 21px;
   line-height: 21px;
@@ -432,8 +433,8 @@ input[type="search"] {
 .my-orders::after {
   content: "";
   position: absolute;
-  top: 6px;
-  right: -21px;
+  top: 7px;
+  right: -19px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -441,7 +442,7 @@ input[type="search"] {
 }
 .account {
   margin: 0px;
-  padding-left: 32px;
+  padding-left: 29px;
 }
 .my-orders:hover,
 .my-orders:focus,
@@ -459,7 +460,7 @@ input[type="search"] {
   width: 940px;
   margin: 0 auto;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 39px;
   background-color: #32425c;
 }
 .site-navigation{
@@ -766,6 +767,7 @@ input[type="search"] {
       flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-bottom: 2px;
 }
 .popular-item .catalog-item:nth-child(4n) {
   margin-right: 0px;
@@ -787,15 +789,15 @@ input[type="search"] {
   width: 253px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 9px;
   margin-top: 25px;
   margin-right: 26px;
   margin-bottom: 26px;
   text-align: center;
 }
 .popular {
-  width: 630px;
+  width: 635px;
   margin: 0;
   padding: 0;
   padding: 30px 0px 30px 27px;
@@ -832,6 +834,21 @@ input[type="search"] {
 .producer:nth-child(4n) {
   margin-right: 0px;
 }
+.producer:nth-child(2) {
+  padding-bottom: 4px;
+}
+.producer:nth-child(4) {
+  padding-bottom: 15px;
+}
+.producer:nth-child(5) {
+  padding-left: 3px;
+  padding-top: 3px;
+}
+.producer:nth-child(6) {
+  padding-left: 3px;
+  padding-top: 5px;
+}
+
 .producer-link {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -997,16 +1014,17 @@ input[type="search"] {
 .name-of-item {
   padding: 0;
   margin: 0;
-  padding: 0 25px;
-  margin-top: 8px;
+  padding: 0 24px;
+  padding-left: 22px;
+  margin-top: 7px;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
 }
 .old-price {
   min-height: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 12px;
+  margin-bottom: 8px;
   line-height: 18px;
   color: #a9a9a9;
   text-decoration: line-through;
@@ -1015,11 +1033,11 @@ input[type="search"] {
 .new-price {
   display: block;
   position: relative;
-  width: 78px;
-  margin-top: 12px;
-  margin-left: 43px;
+  width: 81px;
+  margin-left: 42px;
   margin-bottom: 20px;
-  padding: 10px 30px;
+  padding: 10px 31px;
+  padding-left: 26px;
   height: 17px;
 
   color: white;
@@ -1098,7 +1116,7 @@ input[type="search"] {
 }
 .services {
   position: relative;
-  padding-top: 66px;
+  padding-top: 65px;
   background-color: #f4f7f9;
   color: #000000;
 }
@@ -1111,7 +1129,7 @@ input[type="search"] {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 99px;
-  margin-top: 70px;
+  margin-top: 68px;
 }
 .delivery::after {
   content: "";
@@ -1137,7 +1155,7 @@ input[type="search"] {
   content: "";
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: -10px;
   width: 465px;
   height: 285px;
 
@@ -1146,7 +1164,7 @@ input[type="search"] {
 .service-name {
   margin: 0;
   padding: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
@@ -1168,7 +1186,7 @@ input[type="search"] {
 .credit .main-button {
   width: 195px;
   padding: 10px 0;
-  margin-top: 25px;
+  margin-top: 27px;
   text-align: center;
   vertical-align: middle;
   background-color: #ff5357;
@@ -1245,8 +1263,8 @@ input[type="search"] {
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
- margin-top: 77px;
- margin-bottom: 87px;
+ margin-top: 80px;
+ margin-bottom: 86px;
 }
 .company-description {
   width: 520px;
@@ -1282,7 +1300,7 @@ input[type="search"] {
 }
 .partners {
   margin-bottom: 0px;
-  margin-top: 23px;
+  margin-top: 21px;
   padding: 0px;
 
   font-size: 18px;
@@ -1292,7 +1310,7 @@ input[type="search"] {
 .partner-name {
   position: relative;
   margin-left: 35px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 .partner-name:last-of-type {
   margin-bottom: 0;
@@ -1311,7 +1329,7 @@ input[type="search"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 11px 40px 9px;
-  margin-top: 38px;
+  margin-top: 37px;
 }
 .little-map {
   background-color: grey;
@@ -1326,9 +1344,10 @@ input[type="search"] {
   width: 300px;
   text-align: center;
   vertical-align: middle;
-  padding-top: 11px;
+  padding-top: 10px;
   padding-bottom: 9px;
-  margin-top: 38px;
+  padding-left: 1px;
+  margin-top: 37px;
 }
 .breadcrumbs {
   display: -webkit-box;
@@ -1338,7 +1357,7 @@ input[type="search"] {
       flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 .icon-home {
   margin-top: 2px;
@@ -1352,8 +1371,8 @@ input[type="search"] {
 .breadcrumbs-item::after {
   content: "";
   position: absolute;
-  top: 3px;
-  right: 17px;
+  top: 2px;
+  right: 16px;
   width: 8px;
   height: 12px;
 
@@ -1364,12 +1383,15 @@ input[type="search"] {
 }
 .breadcrumbs-link,
 .breadcrumbs-current {
-  margin-right: 41px;
+  margin-right: 40px;
   list-style: none;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+}
+.breadcrumbs-current {
+  margin-left: 3px;
 }
 .catalog-name {
   padding: 0px;
@@ -1386,7 +1408,7 @@ input[type="search"] {
   background-color: #f2f6f8;
 }
 .filters-form {
-  margin-top: 10px;
+  margin-top: 11px;
 }
 .filters {
   width: 220px;
@@ -1477,7 +1499,7 @@ input[type="search"] {
 .filter-fields {
   padding: 0;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   border-bottom: 1px solid #f7f3ec;
 }
 .filter-field {
@@ -1488,7 +1510,7 @@ input[type="search"] {
 }
 .filter-fields:last-of-type {
   border: none;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 .filter-options {
   padding: 0;
@@ -1649,7 +1671,7 @@ input[type="search"] {
 }
 .about-perforators {
   padding-top: 65px;
-  padding-bottom: 68px;
+  padding-bottom: 69px;
   color: #000000;
   background-color: #f4f7f9;
 }
@@ -1690,7 +1712,7 @@ input[type="search"] {
   width: 323px;
   margin: 0px;
   padding: 0px;
-  padding-left: 2px;
+  padding-left: 3px;
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
@@ -1714,7 +1736,7 @@ input[type="search"] {
   width: 555px;
   margin: 0px;
   padding: 0px;
-  margin-top: 38px;
+  margin-top: 37px;
   margin-left: 67px;
   list-style: none;
   font-size: 18px;
@@ -1722,7 +1744,7 @@ input[type="search"] {
 }
 .footer-navigation {
   margin-top: 0px;
-  margin-bottom: 72px;
+  margin-bottom: 74px;
   padding-left: 23px;
   box-sizing: border-box;
 }
@@ -1746,10 +1768,10 @@ input[type="search"] {
 }
 .footer-navigation-item,
 .list-items {
-  padding-right: 60px;
+  padding-right: 59px;
 }
 .footer-navigation-item {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 .list-items:last-child,
 .footer-navigation-item:nth-child(5) {
@@ -1767,7 +1789,7 @@ input[type="search"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 38px;
+  padding-top: 37px;
   padding-bottom: 30px;
 }
 .footer-feedback-mail,
@@ -1782,7 +1804,8 @@ input[type="search"] {
   width: 230px;
   margin: 0px;
   padding: 0px;
-  margin-right: 158px;
+  padding-left: 1px;
+  margin-right: 156px;
 }
 .social-list {
   display: -webkit-box;
