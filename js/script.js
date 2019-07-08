@@ -74,13 +74,12 @@ window.addEventListener("keydown", function (evt) {
    }
  }
 });
-if (window.matchMedia('(min-width: 1024px)').matches) {
-    var e = document.getElementsByClassName("header-contacts-number");
-    for (i = 0; i < e.length; i++)
-        e[i].setAttribute("x-ms-format-detection", "none");
+
+let headersContacts = document.getElementsByClassName("header-contacts-number");
+for (let i = 0; i < headersContacts.length; i++) {
+  headersContacts[i].setAttribute("x-ms-format-detection", "none");
 }
-if (window.matchMedia('(min-width: 1024px)').matches) {
-    var e = document.getElementsByClassName("footer-contacts");
-    for (i = 0; i < e.length; i++)
-        e[i].setAttribute("x-ms-format-detection", "none");
+let footerContacts = document.getElementsByClassName("footer-contacts");
+for (let i = 0; i < footerContacts.length; i++) {
+  footerContacts[i].setAttribute("x-ms-format-detection", "none");
 }
